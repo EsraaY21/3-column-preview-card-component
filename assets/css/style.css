@@ -24,22 +24,15 @@ body {
 .card {
     border-radius: 8px;
     overflow: hidden;
-    width: 100%;
     max-width: 920px;
+    width: 100%;
     display: flex;
 }
 
-.card .division {
+section {
     padding: 48px;
     width: 100%;
-}
-
-.card .orange {
-    background-color: var(--bright-orange);
-}
-
-.card .orange button {
-    color: var(--bright-orange);
+    flex: 1;
 }
 
 h1 {
@@ -59,6 +52,15 @@ button {
     font-size: 15px;
 }
 
+.orange {
+    background-color: var(--bright-orange);
+}
+
+.orange button {
+    color: var(--bright-orange);
+}
+
+
 p {
     color: var(--transparent-white);
     margin-bottom: 83px;
@@ -70,6 +72,7 @@ button {
     padding: 11px 32px;
     border: 2px solid transparent;
     cursor: pointer;
+    
 }
 
 
@@ -95,3 +98,9 @@ button:hover
     background-color: transparent;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  }
