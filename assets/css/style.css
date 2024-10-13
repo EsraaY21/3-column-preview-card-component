@@ -1,0 +1,97 @@
+@import url('reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--very-light-gray);
+    padding: 88px 24px;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+}
+
+.card .division {
+    padding: 48px;
+    width: 100%;
+}
+
+.card .orange {
+    background-color: var(--bright-orange);
+}
+
+.card .orange button {
+    color: var(--bright-orange);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--very-light-gray);
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+}
+
+p,
+button {
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+p {
+    color: var(--transparent-white);
+    margin-bottom: 83px;
+}
+
+button {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 11px 32px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+.turquoise {
+    background-color: var(--dark-cyan);
+}
+
+.turquoise button{
+    color: var(--dark-cyan);
+}
+
+.dark {
+    background-color: var(--very-dark-cyan);
+}
+
+.dark button {
+    color: var(--very-dark-cyan);
+}
+
+button:hover
+{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
